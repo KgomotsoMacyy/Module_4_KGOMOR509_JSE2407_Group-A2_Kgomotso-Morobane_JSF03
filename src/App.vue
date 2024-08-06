@@ -1,12 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-
+import ProductList from './components/ProductList'
 </script>
 
 <template>
   <header class="bg-white">
-
-
     <div class="wrapper">
       <nav class="flex justify-between items-center w-[92%] mx-auto">
         <router-link to="/">
@@ -31,7 +29,14 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header>
+
+  <template>
+    <div id="app">
+      <ProductList />
+    </div>
+  </template>
 </template>
+
 
 <style scoped>
 
